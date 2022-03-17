@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link href="style.css" rel="stylesheet">
+</head>
+<body id="body" style="background-color: black;">
+    <img id="lampApagada" src="apagada.png" style="padding-left: 635px; display: block;"></img>
+    <img id="lampAcesa" src="acesa.png" style="padding-left: 635px; display: none;"></img>
+    <button type="button" id="botao"><img src="interruptor.jpg" style="height: 50px; width: 50px;"/></button>
+
+<script>
+    document.querySelector("#botao").onclick=function(){
+        document.getElementById("lampApagada")
+        document.getElementById("lampAcesa")
+        document.getElementById("body")
+
+        if(lampApagada.style.display === "block"){
+            lampApagada.style.display = "none"
+            lampAcesa.style.display = "block"
+            body.style.background = "white"
+        }
+        else{
+            lampAcesa.style.display = "none"
+            lampApagada.style.display = "block"
+            body.style.background = "black"
+        }
+}
+
+</script>    
+</body>
+</html>
